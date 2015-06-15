@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1434381105 source:/home/camilo/Documentos/Repositorios/Programacion-Orintada-Objetos/Ejercios/POO C++/Mi primer proyecto/Auto Moviles/main.cpp
+	<iostream>
+	"LLantas.h"
+	"Puerta.h"
+
+1434381138 /home/camilo/Documentos/Repositorios/Programacion-Orintada-Objetos/Ejercios/POO C++/Mi primer proyecto/Auto Moviles/LLantas.h
+
+1434380860 /home/camilo/Documentos/Repositorios/Programacion-Orintada-Objetos/Ejercios/POO C++/Mi primer proyecto/Auto Moviles/Puerta.h
+
