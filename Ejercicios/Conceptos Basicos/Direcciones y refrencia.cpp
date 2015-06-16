@@ -4,7 +4,6 @@
 #include <iostream>
 using namespace std;
 
-
 void universo()
 {
     int * dir_x = &x;
@@ -14,6 +13,8 @@ void universo()
 
 /**Variables Globales: */
 int x=5;
+
+
 
 /***/
 

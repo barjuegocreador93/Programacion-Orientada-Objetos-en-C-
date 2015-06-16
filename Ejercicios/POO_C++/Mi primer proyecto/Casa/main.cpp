@@ -8,9 +8,13 @@ using namespace std;
 
 int main()
 {
-    pared a;
-    a.modif(2,3,4,2);
-    cout<<a.distancia('y');
+    pared * a;
+    a=new pared[25];
+
+    for(int i=0;i<25;i++)
+    {
+        a[i].mostrar();
+    }
 
 
     getchar();

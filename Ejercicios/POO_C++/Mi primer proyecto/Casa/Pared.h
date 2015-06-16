@@ -4,6 +4,7 @@ public:
     pared(int = 0, int = 0, int = 0, int = 0);
     void modif(int x, int y, int f_x, int f_y);
     int distancia(char eje);
+    void mostrar();
 private:
     int pos_x, pos_y, posf_x, posf_y;
 };
@@ -36,4 +37,11 @@ int pared::distancia(char eje)
 
     }
      return 0;
+}
+void pared::mostrar()
+{
+    cout<<"Pos x="<<pos_x<<endl;
+    cout<<"Pos y="<<pos_y<<endl;
+    cout<<"Pos  f x="<<posf_x<<endl;
+    cout<<"Pos  f y="<<posf_y<<endl;
 }
