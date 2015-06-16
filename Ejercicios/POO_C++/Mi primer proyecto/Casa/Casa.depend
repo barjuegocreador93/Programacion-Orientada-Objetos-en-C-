@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1434467424 source:c:\users\manuelag\documents\github\programacion-orintada-objetos\ejercicios\poo_c++\mi primer proyecto\casa\main.cpp
+	<iostream>
+	<stdio.h>
+	"Pared.h"
+
+1434467620 c:\users\manuelag\documents\github\programacion-orintada-objetos\ejercicios\poo_c++\mi primer proyecto\casa\pared.h
+
