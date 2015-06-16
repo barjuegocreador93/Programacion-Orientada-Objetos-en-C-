@@ -10,77 +10,134 @@
 			section{font-size: 2em;}
 			nav{width:100%; margin: 5em 0 5em 0;}
 			nav button{font-size: 1.4em;}
-		</style>
-		</head>
-			<body>
-				<nav>
-					<button class="aid1 getText activ_on">Introducción a POO en C++</button>
-					<button class="aid2 getText">Concepto Básico</button>
-					<button class="aid3 getText">Clases</button>
-					<button class="aid4 getText">Plantillas</button>	
-					<button class="aid5 getText">Apps</button>			
-				</nav>
-				<div class="acl1">
-					<section class="h_1">
-						<p>La Programación Orientada a Objetos es el paradigma que ha permitido la evolución del los lenguajes y de la tecnología ya que esta permite de cierto modo generalizar los problemas y generar nuevos conceptos constituidos de unos previamente construidos.</p>
-					</section>
-				</div>
-				<div class="acl2">
-					<section class="h_1">
-						
-					</section>
-					<nav>
-						<button class="aid2_1 getText">1. Direcciones y referencia</button>
-						<button class="aid2_2 getText">2. Funciones</button>
-						<button class="aid2_3 getText">3. Parametros de funciones</button>
-						<button class="aid2_4 getText">4. Parametro de funcion  por referencia</button>
-						
-					</nav>
-					
-						<section class="acl2_2">
-							<h2>Funciones</h2>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYCTqYvDEI8" frameborder="0" allowfullscreen></iframe>
-						</section>
-						<section class="acl2_3">
-							<h2>Parametros de funciones</h2>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/_kWZjya6agU" frameborder="0" allowfullscreen></iframe>
-						</section>
-						<section class="acl2_1">
-							<h2>Direcciones y referencia</h2>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/3ILkValvhyI" frameborder="0" allowfullscreen></iframe>
-						</section>
-						<section class="acl2_4">
-							<h2>Parametro de funcion  por referencia</h2>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/OzgHPu8AoD4" frameborder="0" allowfullscreen></iframe>
-						</section>
-						<p>Revisa los ejercicios que se encunetran en Ejercicios/Concpetos Basicos:</p>				
-					
-					
-				</div>							
-				<div class="acl3">
-					<section class="h_1">
-						
-					</section>
-				</div>
-				<div class="acl4">
-					<section class="h_1">
-						
-					</section>
-				</div>
-				<div class="acl5">
-					<section class="h_1">
-						
-					</section>
-				</div>
+			.idss{width: 60%; margin-left: 5%; padding: 10px}
+			pre{text-align: left;}
+			iframe{width: 60%; height: 500px; font-size: 2em;}
+			@media screen and (max-width:715px)
+			{
+				pre{font-size: 0.5em;}
 				
-				<nav>
-					<button class="aid1 addText"></button>
-					<button class="aid2 addText"></button>
-					<button class="aid3 addText"></button>
-					<button class="aid4 addText"></button>	
-					<button class="aid5 addText"></button>			
-				</nav>
-			</body>
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<button class="aid1 getText activ_on">Introducción a POO en C++</button>
+			<button class="aid2 getText">Concepto Básico</button>
+			<button class="aid3 getText">Clases</button>
+			<button class="aid4 getText">Plantillas</button>
+			<button class="aid5 getText">Apps</button>
+		</nav>
+		<div class="acl1">
+			<section class="h_1">
+				<p>La Programación Orientada a Objetos es el paradigma que ha permitido la evolución del los lenguajes y de la tecnología ya
+					que esta permite de cierto modo generalizar los problemas y generar nuevos conceptos constituidos de unos previamente construidos.</p>
+			</section>
+		</div>
+		<div class="acl2">
+			<section class="h_1"></section>
+			<nav>
+				<button class="aid2_1 getText">1. Direcciones y referencia</button>
+				<button class="aid2_2 getText">2. Funciones</button>
+				<button class="aid2_3 getText">3. Parametros de funciones</button>
+				<button class="aid2_4 getText">4. Parametro de funcion por referencia</button>
+			</nav>
+			<section class="acl2_2">
+				<h2>Funciones</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYCTqYvDEI8" frameborder="0" allowfullscreen></iframe>
+			</section>
+			<section class="acl2_3">
+				<h2>Parametros de funciones</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_kWZjya6agU" frameborder="0"
+				allowfullscreen></iframe>
+			</section>
+			<section class="acl2_1">
+				<h2>Direcciones y referencia</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/3ILkValvhyI" frameborder="0"
+				allowfullscreen></iframe>
+			</section>
+			<section class="acl2_4">
+				<h2>Parametro de funcion por referencia</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/OzgHPu8AoD4"
+				frameborder="0" allowfullscreen></iframe>
+			</section>
+			<p>Revisa los ejercicios que se encunetran en Ejercicios/Concpetos Basicos:</p>
+		</div>
+		<div class="acl3 ">
+			<section class="acl3_1 h_1  ">
+				<h2>Objeto Persona:</h2>
+				<b>Direccion:</b>Ejercicios/POO_C++/Persona.cpp</p>
+				<p>La clase persona contiene dos declaradores de paramateros:</p>
+<div class="idss">
+<pre>
+class <a style="color:blue;">persona</a>
+{
+		public:
+			persona();
 			
+		private:
+			string nombre;
+			int edad;
+};
+</pre>
+</div>				
+				<li>Public:<br/>
+					Constructor (Uno solo y simepre)<br/>
+					Metodoos(Cuantos requieran)<br/>
+					Atribustos o Propiedades que puede ejecutar el programador o el mismo objeto<br/><br/>
+				</li>
+				<li>Private:<br/>
+					Instancias o Propiedades que el solo pueden ser cambiadas o ejecutadas dentro del mismo objeto<br/><br/>
+					
+				</li>
+				
+					
+			</section>
+			<section class="acl3_2">
+				<h2>Constructor:</h2>
+				<p>Si observan el constructor del objeto persona es el mismo nombre del objeto, es el constructor dentro de la clase la declaracion de el mismo y luego por fuera de la clase es llamado como: </p>
+<div class="idss">
+<pre>
+};//Fin de la clase
+
+//Constructor:
+<a style="color:blue;">persona</a>::persona()
+{
+		//incializar instancias o propiedades
+		nombre="-";
+		edad=0;	
+}
+</pre>
+</div>				
+				
+								
+			</section>
+			<section class="acl3_3 ">
+				<h2>Ejemplo 1</h2>
+				<iframe src="Ejercicios/POO_C++/Persona.cpp" ></iframe>
+			</section>
+			<nav>
+				<button class="aid3_1 activ_on">Clases</button>
+				<button class="aid3_2">Constructor</button>
+				<!--<button class="aid3_3">Metodos</button>
+				<button class="aid3_4">Instancias</button>-->
+				<button class="aid3_3 getText ">Ejemplo 1</button>
+			</nav>
+			
+		</div>
+		<div class="acl4">
+			<section class="h_1"></section>
+		</div>
+		<div class="acl5">
+			<section class="h_1"></section>
+		</div>
+		<nav>
+			<button class="aid1 addText"></button>
+			<button class="aid2 addText"></button>
+			<button class="aid3 addText"></button>
+			<button class="aid4 addText"></button>
+			<button class="aid5 addText"></button>
+		</nav>
+	</body>
 
 </html>
