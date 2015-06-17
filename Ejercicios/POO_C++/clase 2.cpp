@@ -4,6 +4,7 @@ class empleado
 	public:
 		empleado(string=" ",string=" ",int=18,float=200000);
 		void pedirEmpleado();
+		void mostrarEmpleado();
 	private:
 		string codigo;
 		string nombre;
@@ -27,3 +28,11 @@ void empleado::pedirEmpleado()
 	cout<<"sueldo: ";cin>>sueldo;
 }
 
+void empleado::mostrarEmpleado()
+{
+	cout<<"Empleado: \n\n";
+	cout<<"Nombre: "<<nombre<<"\n";
+	cout<<"Codigo: "<<codigo<<"\n";
+	cout<<"Edad: "<<edad<<"\n";
+	cout<<"Sueldo: "<<sueldo<<"\n";
+}
