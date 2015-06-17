@@ -9,5 +9,10 @@ class empleado
 		int edad;
 		float sueldo;	
 };
-
-
+empleado::empleado(string _codigo, string _nombre, int _edad, float _sueldo)
+{
+	codigo=_codigo;
+	nombre=_nombre;
+	edad=_edad;
+	sueldo=_sueldo;
+}
