@@ -1,4 +1,8 @@
 /**Vamos a Crear el objeto empleado*/
+#include <iostream>
+#include <string.h>
+using namespace std;
+
 class empleado
 {
 	public:
@@ -35,4 +39,13 @@ void empleado::mostrarEmpleado()
 	cout<<"Codigo: "<<codigo<<"\n";
 	cout<<"Edad: "<<edad<<"\n";
 	cout<<"Sueldo: "<<sueldo<<"\n";
+}
+
+
+int main()
+{
+	empleado a;
+	a.perdirEmpleado();
+	a.mostrarEmpleado();	
+	return 0;
 }
