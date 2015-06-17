@@ -10,6 +10,7 @@ class empleado
 		void pedirEmpleado();
 		void mostrarEmpleado();
 		bool operator ==(empleado & otro);
+		bool operator !=(empleado & otro);
 	private:
 		string codigo;
 		string nombre;
@@ -48,6 +49,13 @@ bool empleado::operator==(empleado & otro)
 	{
 		return 1;
 	}
+	return 0;
+}
+
+bool empleado::operator!=(empleado & otro)
+{
+	if(!this==otro)
+	return 1;
 	return 0;
 }
 
