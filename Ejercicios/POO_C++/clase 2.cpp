@@ -1,8 +1,13 @@
 /**Vamos a Crear el objeto empleado*/
 class empleado
 {
-	Public:
-		empleado(string=" ",string=" ",int=18,float=200000);	
+	public:
+		empleado(string=" ",string=" ",int=18,float=200000);
+	private:
+		string codigo;
+		string nombre;
+		int edad;
+		float sueldo;	
 };
 
 
