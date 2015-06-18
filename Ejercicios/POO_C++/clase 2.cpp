@@ -55,7 +55,7 @@ void empleado::mostrarEmpleado()
 	cout<<"Empleado: \n\n";
 	cout<<"Nombre: "<<nombre<<"\n";
 	cout<<"Codigo: "<<codigo<<"\n";
-	validar_num_mayor_cero(edad,"Edad: ");
+	cout<<"Edad: "<<edad<<"\n";
 	cout<<"Sueldo: "<<sueldo<<"\n";
 }
 
