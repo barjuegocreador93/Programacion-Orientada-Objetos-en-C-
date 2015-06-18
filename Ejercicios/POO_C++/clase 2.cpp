@@ -8,7 +8,7 @@ void validar_num_mayor_cero(t & num, string dato)
 {
    num=-1;
    int i=0;
-   while(num <= 0)
+   while(num < 0)
    {
 	   if(i != 0)
 	   {
