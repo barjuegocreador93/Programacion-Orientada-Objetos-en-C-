@@ -46,7 +46,7 @@ void empleado::pedirEmpleado()
 	cout<<"Entrar un empleado: \n\n";
 	cout<<"Nombre: ";cin>>nombre;
 	cout<<"Codigo: ";cin>>codigo;
-	cout<<"edad: ";cin>>edad;
+	validar_num_mayor_cero(edad,"Edad: ");
 	cout<<"sueldo: ";cin>>sueldo;
 }
 
