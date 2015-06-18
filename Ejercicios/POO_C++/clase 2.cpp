@@ -21,7 +21,7 @@ empleado::empleado(string _codigo, string _nombre, int _edad, float _sueldo)
 {
 	codigo=_codigo;
 	nombre=_nombre;
-	edad=_edad;
+	edad=(_edad > 0 ) ? _edad : 0;
 	sueldo=_sueldo;
 }
 
