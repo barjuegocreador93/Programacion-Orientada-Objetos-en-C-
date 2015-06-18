@@ -21,8 +21,10 @@ void validar_num_mayor_cero(t & num, string dato)
 
 class empleado
 {
+	
 	public:
 		empleado(string=" ",string=" ",int=18,float=200000);
+		~empleado();
 		void pedirEmpleado();
 		void mostrarEmpleado();
 		bool operator ==(empleado & otro);
@@ -40,7 +42,10 @@ empleado::empleado(string _codigo, string _nombre, int _edad, float _sueldo)
 	edad=(_edad > 0 ) ? _edad : 0;
 	sueldo=_sueldo;
 }
-
+empleado::~empleado()
+{
+	
+}
 void empleado::pedirEmpleado()
 {
 	cout<<"Entrar un empleado: \n\n";
