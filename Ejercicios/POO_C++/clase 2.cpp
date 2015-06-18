@@ -2,7 +2,22 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-
+template <class t>
+void validar_num_mayor_cero(t & num, string dato)
+{
+   num=-1;
+   int i=0;
+   while(num < 0)
+   {
+	   if(i != 0)
+	   {
+		   cout<<dato<<"No pudo ser gurdada por no ser mayor o iegual que cero ";
+	   }
+       cout<<dato<<" : ";
+       cin>>num;
+   }
+   
+}
 
 class empleado
 {
