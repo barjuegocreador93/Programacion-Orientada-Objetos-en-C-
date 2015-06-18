@@ -21,6 +21,8 @@ void validar_num_mayor_cero(t & num, string dato)
 
 class empleado
 {
+	friend istream &operator>>(istream &,  empleado &);
+    friend ostream &operator<<(ostream &,  const empleado &);
 	
 	public:
 		empleado(string=" ",string=" ",int=18,float=200000);
@@ -79,14 +81,25 @@ bool empleado::operator!=(empleado & otro)
 	return 1;
 	return 0;
 }
+istream empleado::&operator>>(istream & entrada,  empleado &var)
+{
+	var.pedirEmpleado();
+	return entrada;
+}
+ostream empleado::&operator<<(ostream & salida,  const empleado &var)
+{
+	var.mostrarEmpleado();
+	return salida;
+}
 
 int main()
 {
 	empleado a, b;
-	a.perdirEmpleado();
-	a.mostrarEmpleado();
-	b.perdirEmpleado();
-	b.mostrarEmpleado();
+	cin>>a;
+	cout<<a;
+	cin>>b;
+	cout<<b;
+
 	if(a==b)
 	{
 		cout<<"\n\n Usan el mismo codigo!";
