@@ -22,8 +22,7 @@ void validar_num_mayor_cero(t & num, string dato)
 class empleado
 {
 	friend istream &operator>>(istream &,  empleado &);
-    friend ostream &operator<<(ostream &,  const empleado &);
-	
+    friend ostream &operator<<(ostream &,  const empleado &);	
 	public:
 		empleado(string=" ",string=" ",int=18,float=200000);
 		~empleado();
