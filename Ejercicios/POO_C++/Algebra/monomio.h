@@ -3,16 +3,18 @@
 #include<stdlib.h>//libreria de system();
 #include<math.h>
 using namespace std;
-
+class polinomy;
 class monomy
 {
     public:
         monomy();
-        void make();
+        void get(float,string,float);
+        void make(string tipo_num);
         void print();
         void oper();
         void der(string var);
         void integ(string var);
+        bool operator==(monomy &other);
         monomy &operator=(monomy &other);
         monomy operator*(float exp);
         monomy operator*(monomy &other);
@@ -21,6 +23,7 @@ class monomy
         float num;
         vector<string> lit;
         vector<float> exp;
+        friend class polinomy;
 
 };
 
@@ -28,13 +31,33 @@ monomy::monomy()
 {
 
 }
-
-void monomy::make()
+void monomy::get(float numer,string liter, float exps)
 {
-    cout<<"Enter the number of your monomy: ";
-    cin>>num;
-    char x='x';
-    while(x =='x'&& num != 0.0)
+    num=numer;
+    lit.push_back(liter);
+    exp.push_back(exps);
+    oper();
+}
+
+void monomy::make(string tipo_num)
+{
+    if("float"==tipo_num)
+    {
+        cout<<"Enter the number of your monomy: ";
+        cin>>num;
+    }else
+    if("racional"==tipo_num)
+    {
+        int a,b;
+        cout<<"Entrar numerador: ";
+        cin>>a;
+        cout<<"Entrar denominador: ";
+        cin>>b;
+        num=a/b;
+    }
+
+    char x='z';
+    while(x !='c'&& num != 0.0)
     {
         system("clear");
         cout<<"Quiere entrar una varable?:(x = si)||(c = no)_: ";
@@ -61,11 +84,14 @@ void monomy::print()
     if(num!=0)if(num!=1)cout<<num;
     for(int i=0;i<lit.size();i++)
     {
-        cout<<"*["<<lit[i];
-        if(exp[i]!=1)cout<<"**"<<exp[i]<<"]";
-        else cout<<"]";
-    }
 
+
+           cout<<"["<<lit[i];
+           if(exp[i]!=1)cout<<"**"<<exp[i]<<"]";
+           else cout<<"]";
+
+
+    }
 }
 
 void monomy::oper()
@@ -117,7 +143,7 @@ void monomy::der(string var)
             exp[i]=exp[i]-1;
         }
     }
-    if(num==1&&lit.size()==0)
+    if(lit.size()==0)
     {
         num=0;
     }
@@ -154,5 +180,20 @@ void monomy::integ(string var)
         lit.push_back(var);
         exp.push_back(1.0);
     }
+
+
+}
+
+bool monomy::operator==(monomy &other)
+{
+    if(lit.size()==other.lit.size())
+    {
+        for(int i=0;i<lit.size();i++)
+        {
+            if(lit[i]!=other.lit[i])return 0;
+        }
+        return 1;
+    }
+    return 0;
 }
 

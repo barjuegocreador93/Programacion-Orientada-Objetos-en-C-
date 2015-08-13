@@ -1,10 +1,13 @@
 # depslib dependency file v1.0
-1439501919 source:/home/camilo/Documentos/Repositories/Programacion-Orientada-Objetos-en-C-/Ejercicios/POO_C++/Algebra/Index.cpp
-	"monomio.h"
+1439508412 source:/home/camilo/Documentos/Repositories/Programacion-Orientada-Objetos-en-C-/Ejercicios/POO_C++/Algebra/Index.cpp
+	"polinomy.h"
 
-1439502605 /home/camilo/Documentos/Repositories/Programacion-Orientada-Objetos-en-C-/Ejercicios/POO_C++/Algebra/monomio.h
+1439508540 /home/camilo/Documentos/Repositories/Programacion-Orientada-Objetos-en-C-/Ejercicios/POO_C++/Algebra/monomio.h
 	<iostream>
 	<vector>
 	<stdlib.h>
 	<math.h>
+
+1439508394 /home/camilo/Documentos/Repositories/Programacion-Orientada-Objetos-en-C-/Ejercicios/POO_C++/Algebra/polinomy.h
+	"monomio.h"
 
